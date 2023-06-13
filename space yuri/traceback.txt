@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    show image framestuff
+  File "game/script.rpy", line 23, in <module>
+    show image framestuff
+NameError: name 'framestuff' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    show image framestuff
+  File "C:\Users\Dell 7010\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Dell 7010\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\ast.py", line 1384, in show_imspec
+    expression = renpy.python.py_eval(expression)
+  File "C:\Users\Dell 7010\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1153, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Dell 7010\OneDrive\Desktop\renpy-8.1.1-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 23, in <module>
+    show image framestuff
+NameError: name 'framestuff' is not defined
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.1.23060707
+space yuri 1.0
+Tue Jun 13 03:30:00 2023
