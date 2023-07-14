@@ -249,13 +249,13 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            textbutton _("Back") action Rollback()
+#            textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
+#            textbutton _("Q.Save") action QuickSave()
+#            textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
 
 
@@ -506,10 +506,11 @@ style game_menu_navigation_frame:
 style game_menu_content_frame:
     left_margin 40
     right_margin 20
-    top_margin 10
+    top_margin 5
 
 style game_menu_viewport:
     xsize 920
+    ysize 773
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
@@ -518,7 +519,7 @@ style game_menu_side:
     spacing 10
 
 style game_menu_label:
-    xpos 50
+    xpos 40
     ysize 120
 
 style game_menu_label_text:
@@ -530,6 +531,8 @@ style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
     yoffset -30
+    color gui.text_color
+
 
 
 ## About screen ################################################################
